@@ -1,0 +1,356 @@
+body {
+    /* background-color: #aaa; */
+    background-color: white;
+}
+
+#standing-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#standing {
+    display: flex;
+    border: 1px black solid;
+    width: 60%;
+    /* height: 1000px; */
+    flex-direction: column;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.standing-conference-sub-header {
+    height: 50px;
+    width: 50%;
+    border-bottom: 1px #e2e2e2 solid;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.standing-conference-header {
+    display: flex;
+}
+
+.standing-team {
+    width: 100%;
+    height: 50px;
+    border-top: 1px #e2e2e2 solid;
+    display: flex;
+    align-items: center;
+}
+
+.standing-team-name {
+    text-align: center;
+    width: 50%;
+}
+
+.standing-team-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.standing-team-win {
+    width: 25%;
+}
+
+.standing-team-loss {
+    width: 25%;
+}
+
+.standing-team-img {
+    /* height: 50px; */
+    width: 30px;
+    padding-left: 30px;
+}
+
+.standing-team-ranking {
+    width: 30px;
+    text-align: right;
+}
+
+.standing-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.standing-header-team {
+    width: 30px;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.standing-header-blank {
+    width: 50%;
+}
+
+.standing-header-res {
+    width: 25%;
+}
+
+#navigation {
+    width: 100%;
+    height: 50px;
+    border: 1px black solid;
+    display: flex;
+}
+
+.navigation-tab {
+    width: 100%;
+    border: 1px black solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+#navigation a {
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+#team-selection-history {
+    width: 100px;
+    border: 1px black solid;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+#team-selection-result {
+    border: 1px black solid;
+    min-height: 25px;
+    width: calc(100% - 125px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#team-selection-button {
+    max-width: 25px;
+    border: 1px black solid;
+    max-height: 25px;
+}
+
+#team-selection-nav {
+    width: 100%;
+    display: flex;
+    height: 25px;
+}
+
+#team-selection-button img {
+    height: 25px;
+}
+
+#team-selection-board {
+    width: 40%;
+    border: 1px black solid;
+    min-height: 100px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    right: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 86px;
+    background: white;
+}
+
+#team-selection-board.hide {
+    display: none;
+}
+
+.team-selection-team {
+    width: 20%;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    font-family: 'Consolas', Courier, monospace;
+}
+
+.team-selection-team img {
+    width: 15px;
+    height: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.team-selection-team.selected {
+    background-color: #d3cfcf;
+}
+
+.team-selection-res {
+    height: 20px;
+    align-items: center;
+    display: flex;
+    font-family: 'Consolas', Courier, monospace;
+}
+
+.team-selection-res img {
+    width: 10px;
+    height: 10px;
+    padding: 0 5px;
+}
+
+#game-display-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#game-display {
+    border: 1px black solid;
+    width: 60%;
+    margin-top: 50px;
+}
+
+#game-display a {
+    text-decoration: none;
+    color: black;
+}
+
+.game-display-single {
+    display: flex;
+    height: 50px;
+    border: 1px black solid;
+    align-items: center;
+}
+
+.game-display-single .time {
+    padding-left: 20px;
+    font-size: 12px;
+    width: 70px;
+    text-align: center;
+}
+
+.game-display-single .visit {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    width: calc((100% - 200px) * 0.5);
+    justify-content: right;
+}
+
+.game-display-single .home img, .game-display-single .visit img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.game-display-single .score {
+    padding: 0;
+    width: 90px;
+    text-align: center;
+}
+
+.game-display-single .home {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 200px) * 0.5);
+    justify-content: left;
+}
+
+.game-display-single .logo-wrapper {
+    width: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#team-info-wrapper {
+    width: 100%;
+    /* height: 95vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-bottom: 50px;
+}
+
+#team-info-wrapper a {
+    width: 40%;
+    align-self: center;
+}
+
+#team-info-main {
+    width: 40%;
+    height: 350px;
+    border: 1px solid black;
+    align-self: center;
+}
+
+#team-info-header {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+#team-info-header-name {
+    flex-grow: 100;
+    height: 100%;
+    display: flex;
+    /* border-left: 1px black solid; */
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 50px;
+}
+
+.team-info-entry {
+    /* border-top: 1px black solid; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.team-info-key {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.team-info-value {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border-left: 1px black solid; */
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+#team-info-img {
+    width: 40%;
+    /* text-align: center; */
+    text-align: right;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#team-info-img img {
+    height: 100%;
+}
+
+#game-info-player-pic {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: end;
+}
+
+#game-info-player-pic img {
+    max-width: 50px;
+    max-height: 36.53px;
+}
+
+#game-info-player {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
